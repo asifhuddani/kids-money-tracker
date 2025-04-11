@@ -145,7 +145,7 @@
       const amount = parseFloat(input.value);
       if (!isNaN(amount) && amount > 0) {
         balance += amount;
-        history.push(`💰 Earned ££{amount.toFixed(2)}`);
+        history.push(`💰 Earned £${amount.toFixed(2)}`);
         updateDisplay();
         input.value = '';
       }
@@ -157,7 +157,7 @@
       const amount = parseFloat(input.value);
       if (!isNaN(amount) && amount > 0) {
         balance -= amount;
-        history.push(`🧸 Spent $${amount.toFixed(2)} on ${reason}`);
+        history.push(`🧸 Spent £${amount.toFixed(2)} on ${reason}`);
         updateDisplay();
         input.value = '';
         document.getElementById('spend-reason').value = '';
