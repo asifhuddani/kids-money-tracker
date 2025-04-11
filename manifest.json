@@ -1,0 +1,9 @@
+{
+  "name": "Kid's Money Tracker",
+  "short_name": "MoneyTracker",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f0f8ff",
+  "theme_color": "#4caf50",
+  "icons": []
+}
