@@ -73,7 +73,7 @@
 
   <div id="app" style="display:none;">
     <h2><span id="avatar">🙂</span> Hello, <span id="display-name"></span>!</h2>
-    <div class="balance">Current Balance: $<span id="balance">0</span></div>
+    <div class="balance">Current Balance: £<span id="balance">0</span></div>
 
     <div class="input-section">
       <input type="number" id="earn-input" placeholder="Enter amount earned" />
@@ -145,7 +145,7 @@
       const amount = parseFloat(input.value);
       if (!isNaN(amount) && amount > 0) {
         balance += amount;
-        history.push(`💰 Earned $${amount.toFixed(2)}`);
+        history.push(`💰 Earned ££{amount.toFixed(2)}`);
         updateDisplay();
         input.value = '';
       }
